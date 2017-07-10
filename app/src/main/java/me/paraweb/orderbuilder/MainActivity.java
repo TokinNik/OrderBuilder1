@@ -34,16 +34,16 @@ public class MainActivity extends AppCompatActivity
     private Spinner spinnerRate;
     private Spinner spinnerPage;
     public static ArrayList<TableRow> tableRows = new ArrayList<TableRow>();//массивы контейнеров интерфейса
-    public static ArrayList<EditText> editNames = new ArrayList<EditText>();//
-    public static ArrayList<Spinner> editValues = new ArrayList<Spinner>();//
+    public static ArrayList<EditText> editNames = new ArrayList<EditText>();
+    public static ArrayList<Spinner> editValues = new ArrayList<Spinner>();
     public static ArrayList<Integer> designValues = new ArrayList<Integer>();//масивы часов для разных разделов
-    public static ArrayList<Integer> pageProofsValues = new ArrayList<Integer>();//
-    public static ArrayList<Integer> programmingValues = new ArrayList<Integer>();//
+    public static ArrayList<Integer> pageProofsValues = new ArrayList<Integer>();
+    public static ArrayList<Integer> programmingValues = new ArrayList<Integer>();
     public static String currentPage;//Текущий отображаемый раздел
     final public static String[] itemsTemplate = {"Пустой проект", "Стандартный шаблон"};//Список шаблонов. Надо будет потом сделать их загрузку
     public int localRateDesign;//Т.к. можно локально изменить рейт, здесь хранятся значения для каждого раздела (в виде номена позиции в списке, а не реальное значение)
-    public int localRatePageProofs;//
-    public int localRateProgramming;//
+    public int localRatePageProofs;
+    public int localRateProgramming;
     private TableRow.LayoutParams paramsRow = new TableRow.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT, 1);
     private TableRow.LayoutParams paramsName = new TableRow.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT, 8);
     private TableRow.LayoutParams paramsValue = new TableRow.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT, 1);
