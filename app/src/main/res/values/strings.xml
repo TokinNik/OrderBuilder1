@@ -1,0 +1,113 @@
+<resources>
+
+    <string name="app_name">OrderBuilder</string>
+    <string name="total">Итого:</string>
+    <string name="plus">+</string>
+    <string name="reit">Рейт</string>
+    <string name="page">Страница</string>
+    <string name="hours">Часы</string>
+    <string name="section">Раздел</string>
+
+    <string-array name="rates">
+        <item>5000</item>
+        <item>4900</item>
+        <item>4800</item>
+        <item>4700</item>
+        <item>4600</item>
+        <item>4500</item>
+        <item>4400</item>
+        <item>4300</item>
+        <item>4200</item>
+        <item>4100</item>
+        <item>4000</item>
+        <item>3900</item>
+        <item>3800</item>
+        <item>3700</item>
+        <item>3600</item>
+        <item>3500</item>
+        <item>3400</item>
+        <item>3300</item>
+        <item>3200</item>
+        <item>3100</item>
+        <item>3000</item>
+        <item>2900</item>
+        <item>2800</item>
+        <item>2700</item>
+        <item>2600</item>
+        <item>2500</item>
+        <item>2400</item>
+        <item>2300</item>
+        <item>2200</item>
+        <item>2100</item>
+        <item>2000</item>
+        <item>1900</item>
+        <item>1800</item>
+        <item>1700</item>
+        <item>1600</item>
+        <item>1500</item>
+        <item>1400</item>
+        <item>1300</item>
+        <item>1200</item>
+        <item>1100</item>
+        <item>1000</item>
+        <item>900</item>
+        <item>800</item>
+        <item>700</item>
+        <item>600</item>
+        <item>500</item>
+        <item>400</item>
+        <item>300</item>
+        <item>200</item>
+        <item>100</item>
+    </string-array>
+    <string-array name="hours">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+    </string-array>
+    <string-array name="pages">
+        <item>Дизайн</item>
+        <item>Вёрстка</item>
+        <item>Программирование</item>
+    </string-array>
+    <string name="menu_newProject">Новый проект</string>
+    <string name="menu_save">Сохранить проект</string>
+    <string name="menu_load">Загрузить</string>
+    <string name="menu_changeTemp">Изменить шаблон</string>
+    <string name="zero">0</string>
+    <string name="cancel">Отмена</string>
+    <string name="next">Продолжить</string>
+    <string name="saveOnServer">Сохранить на сервер</string>
+    <string name="saveInExcel">Сохранить в формате Excel</string>
+    <string name="saveProjectQ">Сохранить проект?</string>
+    <string name="enterProjectName">Введите название проекта</string>
+    <string name="loadProjectQ">Загрузить проект?</string>
+    <string name="errorDataLost">Все данные в текущем проекте будут потеряны!</string>
+    <string name="saveAndNext">Сохранить и продолжить</string>
+    <string name="loadProjectTemplateQ">Загрузить шаблон проекта?</string>
+    <string name="choiseProjectTemplate">Выберите шаблон проекта</string>
+    <string name="createNewProjectQ">Создать новый проект?</string>
+    <string name="projectName">название проекта</string>
+</resources>

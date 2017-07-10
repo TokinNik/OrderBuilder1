@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="me.paraweb.orderbuilder.MainActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="20dp">
+
+            <TextView
+                android:id="@+id/textViewSection"
+                android:layout_width="fill_parent"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:paddingLeft="5dp"
+                android:text="@string/section" />
+
+            <TextView
+                android:id="@+id/textViewReit"
+                android:layout_width="fill_parent"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:paddingLeft="5dp"
+                android:text="@string/reit" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            app:layout_constraintHorizontal_bias="0.75"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <Spinner
+                android:id="@+id/spinnerPage"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:entries="@array/pages"
+                android:spinnerMode="dialog"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/spinnerRate"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:id="@+id/spinnerRate"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:entries="@array/rates"
+                app:layout_constraintBottom_toBottomOf="@+id/spinnerPage"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="20dp"
+            android:background="@color/Light_Blue2">
+
+            <TextView
+                android:id="@+id/textViewName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="5dp"
+                android:text="@string/page" />
+
+            <TextView
+                android:id="@+id/textViewHours"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:paddingRight="5dp"
+                android:text="@string/hours" />
+        </TableRow>
+
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            android:background="@color/Light_Blue"
+            tools:layout_editor_absoluteX="63dp"
+            tools:layout_editor_absoluteY="143dp">
+
+            <LinearLayout
+                android:id="@+id/itemTable"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:orientation="vertical">
+
+                <TableRow
+                    android:id="@+id/tableRowForButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/buttonAddRow"
+                        style="@style/Widget.AppCompat.Button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/Dark_Blue"
+                        android:onClick="onClickAddItem"
+                        android:text="@string/plus"
+                        android:textColor="@color/White"
+                        android:textSize="24sp" />
+
+             </TableRow>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="0dp">
+
+            <TextView
+                android:id="@+id/textViewTotal"
+                android:layout_width="205dp"
+                android:layout_height="65dp"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/total"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewCost"
+                android:layout_width="205dp"
+                android:layout_height="65dp"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="0"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textViewTotal"
+                app:layout_constraintVertical_bias="0.0" />
+
+        </TableRow>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
